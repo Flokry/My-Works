@@ -1,0 +1,9 @@
++b.clients#clients
+    +e.container.container
+        +e.inner
+            +b.title
+                +e.H2 Clients
+            +e.UL.list
+                each item in clients
+                    +e.LI.item
+                        +e.IMG(src=" "+item.icon, alt="client")

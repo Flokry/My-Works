@@ -1,0 +1,23 @@
+* {
+    font-family: 'Lato', sans-serif;
+    transition: 0.3s ease;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    min-width: 370px;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@import "_sections.scss";
+@import "_components.scss";

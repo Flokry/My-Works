@@ -1,0 +1,77 @@
+.header {
+    background: url(../img/bg-body.png) center center/cover no-repeat;
+    text-transform: uppercase;
+    padding: 150px 0 75px 0;
+    &__inner {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+        position: relative;
+    }
+    &__logo {
+        width: 150px;
+        height: 150px;
+        background: #fff;
+        border-radius: 50%;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 110%;
+            height: 110%;
+            background: #fff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.2;
+            border-radius: 50%;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            background: #fff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.1;
+            border-radius: 50%;
+        }
+    }
+    h1 {
+        font-size: calc(2vw + 20px);
+        width: 75%;
+        font-weight: 900;
+        text-align: center;
+        line-height: 1.25;
+    }
+    p {
+        font-size: 16px;
+        width: 65%;
+        font-weight: 300;
+        text-align: center;
+        margin: 0;
+        line-height: 2;
+    }
+    @media screen and (max-width: 800px) {
+        p {
+            font-size: 12px;
+        }
+    }
+    @keyframes move-down {
+        from {
+            top: 0;
+        }
+        to {
+            top: 30px;
+        }
+    }
+    &__next {
+        margin: 0 0 15px 0;
+        position: relative;
+        animation: move-down 1.3s infinite;
+    }
+}

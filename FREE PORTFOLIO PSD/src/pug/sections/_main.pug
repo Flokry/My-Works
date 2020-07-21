@@ -1,0 +1,39 @@
++b.about#about
+    +e.container.container
+        +e.inner
+            +b.title
+                +e.H2 About Me
+            +b.paragraph
+                +e.P Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+include ./../_vars
+
++b.expert#service
+    +e.container.container
+        +e.inner
+            +b.title
+               +e.H2 Expert In 
+            +e.UL.list
+                each item in expert
+                    +e.LI.item
+                        +e.img-block
+                            +e.IMG(src=" "+item.icon, alt=" "+item.alt) 
+                        +e.H3= item.title
+                        +b.paragraph
+                            +e.P= item.text
++b.works#works
+    +e.container.container
+        +b.title
+            +e.H2 Latest Works
+        +e.UL.list
+            each item in works
+                +e.LI.item
+                    +e.IMG(src=" "+item.template, alt=" "+item.alt_t)
++b.clients#clients
+    +e.container.container
+        +e.inner
+            +b.title
+                +e.H2 Clients
+            +e.UL.list
+                each item in clients
+                    +e.LI.item
+                        +e.IMG(src=" "+item.icon, alt="client")

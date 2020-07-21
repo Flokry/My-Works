@@ -1,0 +1,32 @@
+.title {
+    h2 {
+        font-weight: 300;
+        font-size: 50px;
+        color: #3677fd;
+        text-align: center;
+        margin-top: 0;
+    }
+}
+
+.pop-hover {
+    p {
+        font-weight: 300;
+        font-size: 50px;
+        color: #d2d2d2;
+        text-align: center;
+        margin-top: 0;
+        &:hover {
+            color: #3677fd;
+        }
+    }
+}
+
+.paragraph {
+    p {
+        font-weight: 500;
+        line-height: 2;
+        color: #5a5a5a;
+        font-size: 14px;
+        margin: 0;
+    }
+}

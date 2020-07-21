@@ -1,0 +1,19 @@
+include bemto/bemto
+
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", href="css/styles.css")
+		link(href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet")
+		title FREE PORTFOLIO PSD
+	body
+		include sections/_first-popup 
+		include sections/_second-popup
+		include sections/_cookie
+		include sections/_header
+		+b.MAIN.main
+			include sections/_main
+		include sections/_footer	
+		script(src="script.js")

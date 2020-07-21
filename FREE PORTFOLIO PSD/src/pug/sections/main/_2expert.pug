@@ -1,0 +1,15 @@
+include ./../_vars
+
++b.expert#service
+    +e.container.container
+        +e.inner
+            +b.title
+               +e.H2 Expert In 
+            +e.UL.list
+                each item in expert
+                    +e.LI.item
+                        +e.img-block
+                            +e.IMG(src=" "+item.icon, alt=" "+item.alt) 
+                        +e.H3= item.title
+                        +b.paragraph
+                            +e.P= item.text
