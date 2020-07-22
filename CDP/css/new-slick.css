@@ -1,0 +1,141 @@
+.slick-dots {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5px;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 20px 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+    outline: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+    opacity: 1;
+}
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    content: '•';
+    transform: translateX(-50%);
+    text-align: center;
+    border: 1px #fff solid;
+    border-radius: 50%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    background: #fff;
+}
+
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    z-index: 40;
+}
+
+.slick-prev {
+    left: -25%;
+    width: 30px;
+    height: 30px;
+    background: url(../img/back-white.svg) center center/cover no-repeat;
+}
+
+.slick-next {
+    right: -25%;
+    width: 30px;
+    height: 30px;
+    background: url(../img/next-white.svg) center center/cover no-repeat;
+}
+
+@media screen and (max-width: 1200px) {
+    .slick-dots {
+        flex-flow: row;
+        width: 100%;
+        top: 25px;
+    }
+    .slick-prev {
+        left: -10%;
+    }
+    .slick-next {
+        right: -10%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .slick-prev {
+        left: 50px;
+        top: 94%;
+    }
+    .slick-next {
+        right: 50px;
+        top: 94%;
+    }
+    .meet .slick-prev {
+        left: 25%;
+    }
+    .meet .slick-next {
+        right: 25%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .meet .slick-prev {
+        left: 10%;
+    }
+    .meet .slick-next {
+        right: 10%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .slick-prev,
+    .slick-next {
+        display: none !important;
+    }
+}

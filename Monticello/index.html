@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font/stylesheet.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/new-slick.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <title>Exam 2</title>
+</head>
+
+<body>
+    <header class="header" id="top">
+        <div class="header__container">
+            <div class="navbar">
+                <div class="navbar__logo">
+                    <a href="#top">
+                        <img src="img/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="navbar__burger" id="burger-js">
+                    <button class="navbar__burger-button"></button>
+                </div>
+                <div class="navbar__menu">
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <a href="#about" class="navbar__link">
+                                <span class="navbar__dot navbar__dot-1"></span> About Us
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#news" class="navbar__link">
+                                <span class="navbar__dot navbar__dot-3"></span> News
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#gallery" class="navbar__link">
+                                <span class="navbar__dot navbar__dot-2"></span> Projects
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#footer" class="navbar__link">
+                                <span class="navbar__dot navbar__dot-4"></span> Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="social">
+                        <li class="social-link">
+                            <a href="facebook.com">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 310 310" style="enable-background:new 0 0 310 310;" xml:space="preserve">
+                                <path d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+                                c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+                                V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+                                C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+                                c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"/>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="social-link">
+                            <a href="twitter.com">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+                                c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+                                        c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+                                        c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+                                        c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+                                        c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+                                        C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+                                        C480.224,136.96,497.728,118.496,512,97.248z"/>
+                                    </svg>
+                            </a>
+                        </li>
+                        <li class="social-link">
+                            <a href="instagram.com">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160
+                                    C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48
+                                        h192c61.76,0,112,50.24,112,112V352z"/>
+                                </g>
+                                <g>
+                                    <path d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336
+                                        c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z"/>
+                                    </g>
+                                <g>
+                                    <circle cx="393.6" cy="118.4" r="17.056"/>
+                                </g>
+                            </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__slider">
+                <div class="header__slide">
+                    <h1 class="header__title title">Simple & Modern</h1>
+                    <p class="header__subtitle">We make the world's beautiful every day</p>
+                </div>
+                <div class="header__slide">
+                    <h1 class="header__title title">Simple & Modern</h1>
+                    <p class="header__subtitle">We make the world's beautiful every day</p>
+                </div>
+                <div class="header__slide">
+                    <h1 class="header__title title">Simple & Modern</h1>
+                    <p class="header__subtitle">We make the world's beautiful every day</p>
+                </div>
+                <div class="header__slide">
+                    <h1 class="header__title title">Simple & Modern</h1>
+                    <p class="header__subtitle">We make the world's beautiful every day</p>
+                </div>
+                <div class="header__slide">
+                    <h1 class="header__title title">Simple & Modern</h1>
+                    <p class="header__subtitle">We make the world's beautiful every day</p>
+                </div>
+            </div>
+            <div class="scroll-next-block">
+                <a href="">
+
+                    <svg version="1.1" fill="#fff" class="scroll-next-block__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 492.004 492.004" style="enable-background:new 0 0 492.004 492.004;" xml:space="preserve">
+                        <path d="M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12
+                        c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028
+                        c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265
+                        c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="about-us" id="about">
+            <div class="about-us__container container">
+                <h2 class="about-us__title title">What We Do</h2>
+                <div class="about-us__project">
+                    <figure class="about-us__photo">
+                        <img class="about-us__img" src="img/trade_center.jpg" alt="Trade Center">
+                    </figure>
+                    <div class="about-us__description">
+                        <p class="about-us__slogan ">One World</p>
+                        <h4 class="about-us__build-name title">Trade Center</h4>
+                        <p class="about-us__build-info">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+                        <button class="about-us__more-btn btn">More Details</button>
+                        <a href="#" class="about-us__location">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <path d="M256,0C161.896,0,85.333,76.563,85.333,170.667c0,28.25,7.063,56.26,20.49,81.104L246.667,506.5
+                                        c1.875,3.396,5.448,5.5,9.333,5.5s7.458-2.104,9.333-5.5l140.896-254.813c13.375-24.76,20.438-52.771,20.438-81.021
+                                        C426.667,76.563,350.104,0,256,0z M256,256c-47.052,0-85.333-38.281-85.333-85.333c0-47.052,38.281-85.333,85.333-85.333
+                                        s85.333,38.281,85.333,85.333C341.333,217.719,303.052,256,256,256z"/>
+                            </svg> New York City, United States - 1776 feet
+                        </a>
+                    </div>
+                </div>
+                <div class="about-us__project">
+                    <figure class="about-us__photo">
+                        <img class="about-us__img" src="img/commerce_center.jpg" alt="Commerce Center">
+                    </figure>
+                    <div class="about-us__description">
+                        <p class="about-us__slogan ">International</p>
+                        <h4 class="about-us__build-name title">Commerce Center</h4>
+                        <p class="about-us__build-info">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
+                        <button class="about-us__more-btn btn">More Details</button>
+                        <a href="#" class="about-us__location">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <path d="M256,0C161.896,0,85.333,76.563,85.333,170.667c0,28.25,7.063,56.26,20.49,81.104L246.667,506.5
+                                        c1.875,3.396,5.448,5.5,9.333,5.5s7.458-2.104,9.333-5.5l140.896-254.813c13.375-24.76,20.438-52.771,20.438-81.021
+                                        C426.667,76.563,350.104,0,256,0z M256,256c-47.052,0-85.333-38.281-85.333-85.333c0-47.052,38.281-85.333,85.333-85.333
+                                        s85.333,38.281,85.333,85.333C341.333,217.719,303.052,256,256,256z"/>
+                            </svg> Hong Kong - 1588 Feet
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="news" id="news">
+            <div class="news__container container">
+                <h2 class="news__title title">latest news</h2>
+                <div class="news__slider">
+                    <div class="news__block">
+                        <figure class="news__photo"><img src="img/news_slide_1.jpg" alt="Build 1"></figure>
+                        <div class="news__info-wrapper">
+                            <p class="news__block-title title">See The Unmatched Beauty Of The Great.</p>
+                            <p class="news__description">Free directories: directories are perfect for customers that are...</p>
+                            <div class="news__person">
+                                <img class="news__acc-photo" src="img/acc_img_1.png" alt="Acc1">
+                                <div class="news__person-info">
+
+                                    <p class="news__author-name">Isaac Dunn</p>
+                                    <p class="news__date">09 Feb 2017</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news__block">
+                        <figure class="news__photo"><img src="img/news_slide_2.jpg" alt="Build 2"></figure>
+                        <div class="news__info-wrapper">
+                            <p class="news__block-title title">Effective Advertising Pointers.</p>
+                            <p class="news__description">Having a home based business is a wonderful asset to your life...</p>
+                            <div class="news__person">
+                                <img class="news__acc-photo" src="img/acc_img_2.png" alt="Acc2">
+                                <div class="news__person-info">
+
+                                    <p class="news__author-name">Dominic Freeman</p>
+                                    <p class="news__date">24 Apr 2017</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news__block">
+                        <figure class="news__photo"><img src="img/news_slide_3.jpg" alt="Build 3"></figure>
+                        <div class="news__info-wrapper">
+                            <p class="news__block-title title">Hypnotize Yourself Into The Ghost.</p>
+                            <p class="news__description">There are many things that are important to catalog design....
+                            </p>
+                            <div class="news__person">
+                                <img class="news__acc-photo" src="img/acc_img_3.png" alt="Acc3">
+                                <div class="news__person-info">
+
+                                    <p class="news__author-name">Alice Ward</p>
+                                    <p class="news__date">30 Dec 2017</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__block">
+                        <figure class="news__photo"><img src="img/news_slide_1.jpg" alt="Build 1"></figure>
+                        <div class="news__info-wrapper">
+                            <p class="news__block-title title">See The Unmatched Beauty Of The Great.</p>
+                            <p class="news__description">Free directories: directories are perfect for customers that are...</p>
+                            <div class="news__person">
+                                <img class="news__acc-photo" src="img/acc_img_1.png" alt="Acc1">
+                                <div class="news__person-info">
+
+                                    <p class="news__author-name">Isaac Dunn</p>
+                                    <p class="news__date">09 Feb 2017</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news__block">
+                        <figure class="news__photo"><img src="img/news_slide_2.jpg" alt="Build 2"></figure>
+                        <div class="news__info-wrapper">
+                            <p class="news__block-title title">Effective Advertising Pointers.</p>
+                            <p class="news__description">Having a home based business is a wonderful asset to your life...</p>
+                            <div class="news__person">
+                                <img class="news__acc-photo" src="img/acc_img_2.png" alt="Acc2">
+                                <div class="news__person-info">
+
+                                    <p class="news__author-name">Dominic Freeman</p>
+                                    <p class="news__date">24 Apr 2017</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news__block">
+                        <figure class="news__photo"><img src="img/news_slide_3.jpg" alt="Build 3"></figure>
+                        <div class="news__info-wrapper">
+                            <p class="news__block-title title">Hypnotize Yourself Into The Ghost.</p>
+                            <p class="news__description">There are many things that are important to catalog design....
+                            </p>
+                            <div class="news__person">
+                                <img class="news__acc-photo" src="img/acc_img_3.png" alt="Acc3">
+                                <div class="news__person-info">
+
+                                    <p class="news__author-name">Alice Ward</p>
+                                    <p class="news__date">30 Dec 2017</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <div class="gallery" id="gallery">
+            <div class="gallery__container container">
+                <h2 class="gallery__title title">Gallery</h2>
+                <div class="gallery__inner">
+                    <figure class="gallery__img-wrapper"><img src="img/gallery_img_1.jpg" alt="gallery_img_1" class="gallery__img"></figure>
+                    <div class="gallery__other-img">
+                        <figure class="gallery__img-wrapper_small"><img src="img/gallery_img_2.jpg" alt="gallery_img_2" class="gallery__img"></figure>
+                        <figure class="gallery__img-wrapper_small"><img src="img/gallery_img_3.jpg" alt="gallery_img_3" class="gallery__img"></figure>
+                    </div>
+                    <div class="gallery__other-img">
+
+                        <figure class="gallery__img-wrapper_small"><img src="img/gallery_img_4.jpg" alt="gallery_img_4" class="gallery__img"></figure>
+                        <figure class="gallery__img-wrapper_small"><img src="img/gallery_img_5.jpg" alt="gallery_img_5" class="gallery__img"></figure>
+                    </div>
+                </div>
+                <button class="gallery__btn btn">See More</button>
+            </div>
+        </div>
+        <iframe src="https://snazzymaps.com/embed/248131"></iframe>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="footer__container container">
+            <div class="footer__bar">
+                <div class="footer__logo">
+                    <a href="#top">
+                        <img src="img/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <ul class="footer__social social">
+                    <li class="footer__social-link social-link">
+                        <a href="facebook.com">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 310 310" style="enable-background:new 0 0 310 310;" xml:space="preserve">
+                            <path d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+                            c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+                            V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+                            C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+                            c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"/>
+                        </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-link social-link">
+                        <a href="twitter.com">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+                            c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+                                    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+                                    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+                                    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+                                    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+                                    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+                                    C480.224,136.96,497.728,118.496,512,97.248z"/>
+                                </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-link social-link">
+                        <a href="instagram.com">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <g>
+                                <path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160
+                                C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48
+                                    h192c61.76,0,112,50.24,112,112V352z"/>
+                            </g>
+                            <g>
+                                <path d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336
+                                    c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z"/>
+                                </g>
+                            <g>
+                                <circle cx="393.6" cy="118.4" r="17.056"/>
+                            </g>
+                        </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__postinfo">
+                <p>Copyrights © 2017 Monticello Group</p>
+                <span class="footer__border"></span>
+                <p>Made with &#10084; by Ga Huy</p>
+            </div>
+        </div>
+    </footer>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/sliders.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
